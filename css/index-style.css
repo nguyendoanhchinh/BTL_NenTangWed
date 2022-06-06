@@ -76,18 +76,71 @@ input[type="image"] {
 }
 /* SECTION MAIN */
 
-.main {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-}
-
-.main>section {
-    border-bottom: 5px solid #ffffff;
-}
-
 
 /*SECTION CONTENT*/
 
 
 /* .carousel-inner img, */
+
+
+
+/*footer*/
+footer {
+    background-image: url(../image/anhhotro/background-footer.PNG);
+    background-size: 100%;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 2px solid #ffa500;
+}
+
+.footer h6 {
+    text-align: center;
+}
+
+footer a {
+    color: #ffa500;
+}
+
+footer a:hover {
+    color: #3399ff;
+    text-decoration: none;
+}
+
+.footer-logo>img {
+    width: 100%;
+}
+
+.contact>i {
+    display: block;
+}
+
+.freeship,
+.contact {
+    display: flex;
+    padding-top: 30px;
+}
+
+.freeship>div+div {
+    padding-left: 10px;
+}
+
+.footer-info>ul>li:last-child,
+.footer-info>ul>li:nth-child(4),
+.pr ul {
+    list-style-type: none;
+}
+
+.mauholine {
+    color: #ff0000;
+}
+
+.footer-info img {
+    width: 40%;
+}
