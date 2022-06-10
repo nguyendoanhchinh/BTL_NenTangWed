@@ -154,7 +154,31 @@ margin-top: 40px;
         background-color: #ffa500;
     }
      /* menu con */
+     .sub-menu {
+        display: none;
+        position: absolute;
+    }
     
+    .menu>li:hover .sub-menu {
+        display: block;
+        background-color: #e6e6e6;
+        width: 60vw;
+    }
+    
+    .menu-list {
+        width: 100%;
+        display: flex;
+    }
+    
+    .menu-list>li {
+        width: 25%;
+    }
+    .menu span,
+    .tieude span {
+        display: block;
+        font-weight: bold;
+    }
+
     
     /* FOOTER */
     
