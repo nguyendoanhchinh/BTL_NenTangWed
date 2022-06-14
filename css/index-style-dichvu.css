@@ -77,34 +77,18 @@ input[type="image"] {
 /* SECTION MAIN */
 
 .main {
-    width: 80%;
     margin: 0 auto;
     background-color: #f2f2f2;
 }
 
-.main>section {
-    border-bottom: 5px solid #ffffff;
-}
-/*SECTION CONTENT*/
-.bootstrap-carousel {
+.main-left{
     width: 100%;
-    margin: 0 auto;
-}
-
-.carousel-inner {
-    height: 450px;
 }
 
 /* .carousel-inner img, */
 .service-box img {
-    width: 100%;
-    height: 75%;
-    border-radius: 5px;
-    transition: transform 1s;
-}
-
-.service-box img:hover {
-    transform: scale(1.025);
+    width: 40%;
+    height: 60%;
 }
 
 .service-box,
@@ -112,15 +96,9 @@ input[type="image"] {
     flex-wrap: wrap;
 }
 
-.service-box,
-.service-box>div,
-.news,
-.news>.one-news {
-    display: flex;
-}
-
 .service-box {
-    width: 33.333333333333333333333%;
+    width: 60%;
+    height: 25%;
     border: 5px solid #f2f2f2;
     border-radius: 1.5vw;
     background-color: #ffffff;
@@ -130,92 +108,15 @@ input[type="image"] {
 
 .service-box,
 .service-box>div div {
-    padding: 10px;
-}
-
-.service-box .col60 {
-    text-align: right;
+    padding: 50px;
 }
 
 .service-box:hover {
     background-color: #ffc14d;
 }
 
-.service-box .col40 a {
-    display: block;
-    width: 100%;
-    padding: 0.5vw;
-    background-color: #ffffff;
-    border: 2px solid #ff0000;
-    border-radius: 5px;
-    color: #ff0000;
-    text-align: center;
-}
-
-.service-box .col40 a:hover {
-    background-color: #ff0000;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-.main div>h4 {
-    color: #ffffff;
-    background-color: #ff0000;
-    margin-bottom: 0px;
-    width: 20%;
-    border-radius: 0 20px 0 0;
-}
-
-.main>div {
-    border-bottom: 1px solid #ffa500;
-}
-
-/* ARTICLE */
-
-.news {
-    width: 100%;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    /* độ đen trăng */
-    /*  tính luôn tất cả */
-}
-
-.news>.one-news {
-    filter: grayscale(98%);
-}
-
-.news>.one-news:hover {
-    filter: grayscale(0%)
-}
-
-.news>.one-news {
-    padding: 10px;
-    width: 50%;
-}
-
-.one-news img {
-    width: 100%;
-}
-
-.one-news>div {
-    padding: 10px;
+.main-right{
     width: 40%;
-}
-
-.info {
-    width: 60% !important;
-}
-
-.info a {
-    display: block;
-    color: #ffa500;
-    font-weight: bold;
-}
-
-.info a:hover {
-    color: #3399ff;
-    text-decoration: none;
 }
 
 
