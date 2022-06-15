@@ -1,4 +1,4 @@
-
+//form hỗ trợ
 $(window).ready(function() {
     $('.form-support').hide();
     $('#hotro').click(function() {
@@ -8,3 +8,5 @@ $(window).ready(function() {
         $('.form-support').hide();
     })
 })
+
+
