@@ -19,7 +19,7 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Admin</a>
+            <a class="navbar-brand ps-3" href="#">Admin</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -47,11 +47,15 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div class="sb-sidenav-menu-heading">Quản lý</div>
                             <a class="nav-link" href="admin.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Danh sách quản lý
+                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
+                                Trang chủ
                             </a>
+                            <a class="nav-link" href="quanlydanhsach.html">
+                              <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                              Danh sách quản lý
+                          </a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -120,6 +124,7 @@
                         <button type="button" onclick="myFunction1('demo2')" class="btn btn-warning">Phụ kiện</button>
                         <button type="button" onclick="myFunction1('demo3')" class="btn btn-info"> Danh sách người dùng</button>
                         <div id="demo1" style="display:none"  class="demo" >
+                          
                             <table  class="table"  >
                                 <thead>
                                   <tr>
@@ -128,6 +133,8 @@
                                     <th scope="col">Tên </th>
                                     <th scope="col">Số lượng</th>
                                     <th scope="col">Giá tiền</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -137,17 +144,26 @@
                                     <td>Alaskamummim</td>
                                     <td>2</td>
                                     <td>300.000</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                   </tr>
                                   <tr>
                                     <th scope="row">2</th>
-                                    <td>Alaskamummim</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td><img  height="90" src="image/cuncon/cuncon-becgieduc.jpg" alt=""></td>
+                                    <td>Becgie Duc</td>
+                                    <td>4</td>
+                                    <td>150.000</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                   </tr>
                                   <tr>
-                                    <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <th scope="row">2</th>
+                                    <td><img  height="90" src="image/cuncon/cuncon-becgiehalan.jpg" alt=""></td>
+                                    <td>Becgie HaLan</td>
+                                    <td>5</td>
+                                    <td>500.000</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                   </tr>
                                 </tbody>
                               </table>
@@ -168,34 +184,48 @@
                                   </li>
                                 </ul>
                               </nav>
+                              
                         </div>
                         <div id="demo2" style="display:none" class="demo" >
                               <table class="table" >
                                 <thead>
                                   <tr>
                                     <th scope="col">STT</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
+                                    <th scope="col">Ảnh sản phẩm</th>
+                                    <th scope="col">Tên</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Giá tiền</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
                                     <th scope="row">1</th>
-                                    <td><img  height="90" src="image/cuncon/cuncon-bulldogmapmapa.jpg" alt=""></td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                    <td><img  height="90" src="image/phukien/phukien-balotrongsuot.png" alt=""></td>
+                                    <td>Ba lô trong suốt</td>
+                                    <td>2</td>
+                                    <td>50.000</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                   </tr>
                                   <tr>
                                     <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
+                                    <td><img  height="90" src="image/phukien/phukien-tuivanchuyen.png" alt=""></td>
+                                    <td>Túi vận chuyển</td>
+                                    <td>100</td>
+                                    <td>100.000</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                   </tr>
                                   <tr>
                                     <th scope="row">3</th>
-                                    <td colspan="2">Larry the Bird</td>
-                                    <td>@twitter</td>
+                                    <td><img  height="90" src="image/phukien/phukien-bongbongdochoi.png" alt=""></td>
+                                    <td> Bóng đồ chơi</td>
+                                    <td>150</td>
+                                    <td>25.000</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                   </tr>
                                 </tbody>
                               </table>
@@ -221,29 +251,59 @@
                             <table class="table" >
                               <thead>
                                 <tr>
-                                  <th scope="col">#</th>
-                                  <th scope="col">First</th>
-                                  <th scope="col">Last</th>
-                                  <th scope="col">Handle</th>
+                                  <th scope="col">STT</th>
+                                  <th scope="col">Tên</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">Địa chỉ</th>
+                                  <th scope="col">SĐT</th>
+                                  <th scope="col"></th>
+                                  <th scope="col"></th>
                                 </tr>
                               </thead>
                               <tbody>
                                 <tr>
                                   <th scope="row">1</th>
-                                  <td><img  height="90" src="image/cuncon/cuncon-bulldogmapmapa.jpg" alt=""></td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
+                                  <td>Nguyễn Anh Đức</td>
+                                    <td> aducodong@gmail.com</td>
+                                    <td>Nam Định</td>
+                                    <td>0867951701</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                 <tr>
                                   <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
+                                  <td>Trần Đức Anh </td>
+                                    <td> ducanh@gmail.com</td>
+                                    <td>Hà Nội</td>
+                                    <td>097654324</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                 </tr>
                                 <tr>
                                   <th scope="row">3</th>
-                                  <td colspan="2">Larry the Bird</td>
-                                  <td>@twitter</td>
+                                  <td>Nguyễn Doanh Chính </td>
+                                    <td> doanhchinh@gmail.com</td>
+                                    <td>Ninh Bình</td>
+                                    <td>097654324</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td>Trần Đức Thắng </td>
+                                    <td> ducthang@gmail.com</td>
+                                    <td>Thanh Hóa</td>
+                                    <td>067543653</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
+                                </tr>
+                                <tr>
+                                  <th scope="row">5</th>
+                                  <td>Phùng Việt Đức</td>
+                                    <td> vietduc@gmail.com</td>
+                                    <td>Hà Tĩnh</td>
+                                    <td>067533435</td>
+                                   <th scope="col"><a href="#">Sửa</a></th>
+                                   <th scope="col"><a href="#"> Xóa</a></th>
                                 </tr>
                               </tbody>
                             </table>
