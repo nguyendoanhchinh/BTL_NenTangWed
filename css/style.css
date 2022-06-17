@@ -71,6 +71,25 @@ nav{
 .container-password{
 margin-top: 40px;
 }
+.form__input{
+    width: 80%;
+    border: 1px solid;
+    height: 41px;
+    margin: 0.5vw;
+}
+.btn-submit{
+    background-color: #d69704;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.singup-link{
+    text-decoration: none;
+    padding: 20px 2px;
+}
+
 /*CSS NAV*/
     
     nav {
