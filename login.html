@@ -110,33 +110,33 @@
     </nav>
     
     <div class="container">
+        <h4 id="thongbao"></h4>
         <h3>ĐĂNG NHẬP</h3>
         
           <!-- Form layout -->
         <div class="form-container">
-            <form action="" class="form">
+            <form  action="index.html" id="form__login" method="" role="form" class="form">
                 <div class="form__row">
                     <label for="username" style="font-weight: 600;">
                         Tên tài khoản hoặc địa chỉ email *
                     </label>
                 </div>
-                <input class="form__input" type="text" id="name">
+                <input  style="width: 100%;" class="form__input" type="text" id="username">
 
-                <div class="form__row">
+                <div class="form__row" > 
                     <label  for="password" style="font-weight: 600;">
                         Mật khẩu *
                     </label>
-                
                 </div>
-                <input class="form__input" type="password" id="password">
-
+                <input style="width: 100%;" class="form__input" type="password" id="password">
+                <button onclick="onFormSubmit()" type="submit" class="btn-submit">ĐĂNG NHẬP</button>
             </form>
             <input class="ip_checkbox" type="checkbox"> Ghi nhớ mật khẩu
         </div>
             
-        <button type="submit" class="btn-submit" onclick="window.location.href='./index.html'">ĐĂNG NHẬP</button>
+
        <div class="singup-link">
-        <a href="#">Quên mật khẩu?</a>
+        <a href="#"  style="text-decoration: none;">Quên mật khẩu? </a>
        </div>
     </div>
 
@@ -190,6 +190,7 @@
         </div>
     </footer>
 </body>
+<script src="./js/script.js"></script>
 <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js" >
