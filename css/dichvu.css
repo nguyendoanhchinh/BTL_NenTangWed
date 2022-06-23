@@ -1,0 +1,192 @@
+@import "style.css";
+h4,
+h6 {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.section-content,
+.section-content+div {
+    margin-top: 5px;
+}
+
+a {
+    transition-duration: 0.3s;
+}
+
+
+/*CSS HEADER*/
+
+header {
+    background-image: url(/image/icon/background-header.jpg);
+}
+
+.tieude {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.col30 img {
+    width: 100%;
+}
+
+.tieude>.col40 {
+    padding-top: 3%;
+}
+
+.tieude>.col10 {
+    padding-top: 2%;
+}
+
+.search {
+  
+    display: flex;
+}
+
+.search input {
+    height: 60%;
+    display: block;
+    padding: 10px;
+    border: 2px solid #ffa500
+}
+
+input[type="search"] {
+    width: 90%;
+    border-radius: 5px 0 0 5px;
+}
+
+input[type="image"] {
+    background-color: #ffa500;
+    border-radius: 1px;
+    padding-bottom: 8px;
+}
+
+.header-icon {
+    text-align: center;
+}
+
+.header-icon a {
+    color: #ffa500;
+}
+
+.col10>a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+/* MAIN */
+
+.main {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+}
+
+.main-left{
+    width: 75%;
+}
+
+.main-left>a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.service-box img {
+    width: 90%;
+    height: 40%;
+}
+
+.service-box,
+.service-box {
+    flex-wrap: wrap;
+}
+
+.service-box {
+    height: 25%;
+    border: 5px solid #f2f2f2;
+    border-radius: 1.5vw;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+    transition: width 1s;
+}
+
+.service-box,
+.service-box>div div {
+    padding: 50px;
+}
+
+.service-box:hover {
+    background-color: #ffc14d;
+    color: white;
+}
+
+.main-right{
+    width: 25%;
+}
+
+.main-right>fa fa-search {
+    background-color: #ffc14d;
+}
+
+/*footer*/
+footer {
+    background-image: url(../image/anhhotro/background-footer.PNG);
+    background-size: 100%;
+    color: #ffffff;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 2px solid #ffa500;
+}
+
+.footer h6 {
+    text-align: center;
+}
+
+footer a {
+    color: #ffa500;
+}
+
+footer a:hover {
+    color: #3399ff;
+    text-decoration: none;
+}
+
+.footer-logo>img {
+    width: 100%;
+}
+
+.contact>i {
+    display: block;
+}
+
+.freeship,
+.contact {
+    display: flex;
+    padding-top: 30px;
+}
+
+.freeship>div+div {
+    padding-left: 10px;
+}
+
+.footer-info>ul>li:last-child,
+.footer-info>ul>li:nth-child(4),
+.pr ul {
+    list-style-type: none;
+}
+
+.mauholine {
+    color: #ff0000;
+}
+
+.footer-info img {
+    width: 40%;
+}
