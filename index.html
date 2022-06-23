@@ -50,7 +50,7 @@
                     <span style="display: inline-block; color: #FFA500;">Giỏ hàng</span>
                 </a>
             </button>
-            <div id="myModal" class="modal">
+            <div  style="padding-right: 200px;padding-left: 200px;" id="myModal" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Giỏ Hàng</h5>
@@ -71,7 +71,7 @@
                                     <img class="cart-item-image" src="/image/giongcho/akita-inu.jpg" width="100" height="100">
                                     <span class="cart-item-title">Akita-inu</span>
                                 </div>
-                                <span class="cart-price cart-column">11.100.000VND</span>
+                                <span class="cart-price cart-column">11100000VND</span>
                                 <div class="cart-quantity cart-column">
                                     <input class="cart-quantity-input" type="number" value="2">
                                     <button class="btn btn-danger" type="button">Xóa</button>
@@ -79,7 +79,7 @@
                             </div>
                             <div class="cart-total">
                                 <strong class="cart-total-title">Tổng Cộng:</strong>
-                                <span class="cart-total-price">11.100.000VND</span>
+                                <span class="cart-total-price">11100000VND</span>
                             </div>
                         </div>
                         </div>
@@ -288,6 +288,7 @@
                     <div class="col40">
                         <a href="chitiet.html">Xem chi tiết</a>
                     </div>
+                   
                     <div class="col60">
                         <i class="fas fa-star star1"></i>
                         <i class="fas fa-star star2"></i>
@@ -302,7 +303,7 @@
                 <h6>ALASKA</h6>
                 <div>
                     <div class="col40">
-                        <a href="#">Xem chi tiết</a>
+                        <a href="chitiet.html">Xem chi tiết</a>
                     </div>
                     <div class="col60">
                         <i class="fas fa-star star1"></i>
@@ -318,8 +319,9 @@
                 <h6>BECGIE BỈ (MALINOIS)</h6>
                 <div>
                     <div class="col40">
-                        <a href="#">Xem chi tiết</a>
+                        <a href="chitiet.html">Xem chi tiết</a>
                     </div>
+                    
                     <div class="col60">
                         <i class="fas fa-star star1"></i>
                         <i class="fas fa-star star2"></i>
@@ -831,70 +833,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info-dog">
-                <img src="image/giongcho/husky.jpg" alt="HUSKY" />
-                <h6>HUSKY</h6>
-                <div>
-                    <div class="col40">
-                        <a href="#">Xem chi tiết</a>
-                    </div>
-                    <div class="col60">
-                        <i class="fas fa-star star1"></i>
-                        <i class="fas fa-star star2"></i>
-                        <i class="fas fa-star star3 "></i>
-                        <i class="fas fa-star star4"> </i>
-                        <i class="fas fa-star star5"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="info-dog">
-                <img src="image/giongcho/labrador.png" alt="BLABRADOR" />
-                <h6>BLABRADOR</h6>
-                <div>
-                    <div class="col40">
-                        <a href="#">Xem chi tiết</a>
-                    </div>
-                    <div class="col60">
-                        <i class="fas fa-star star1"></i>
-                        <i class="fas fa-star star2"></i>
-                        <i class="fas fa-star star3 "></i>
-                        <i class="fas fa-star star4"> </i>
-                        <i class="fas fa-star star5"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="info-dog">
-                <img src="image/giongcho/lap-xuong.jpg" alt="LẠP XƯỞNG" />
-                <h6>LẠP XƯỞNG</h6>
-                <div>
-                    <div class="col40">
-                        <a href="#">Xem chi tiết</a>
-                    </div>
-                    <div class="col60">
-                        <i class="fas fa-star star1"></i>
-                        <i class="fas fa-star star2"></i>
-                        <i class="fas fa-star star3 "></i>
-                        <i class="fas fa-star star4"> </i>
-                        <i class="fas fa-star star5"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="info-dog">
-                <img src="image/giongcho/choMalinois.png" alt="MALINOIS" />
-                <h6>MALINOIS</h6>
-                <div>
-                    <div class="col40">
-                        <a href="#">Xem chi tiết</a>
-                    </div>
-                    <div class="col60">
-                        <i class="fas fa-star star1"></i>
-                        <i class="fas fa-star star2"></i>
-                        <i class="fas fa-star star3 "></i>
-                        <i class="fas fa-star star4"> </i>
-                        <i class="fas fa-star star5"></i>
-                    </div>
-                </div>
-            </div>
+            
             
         </section>
         <div>
@@ -937,7 +876,7 @@
     <!-- Ho tro -->
     <div class="form-support">
         <div>
-            <h1>
+            <h1 style="text-align: center;">
                 HỖ TRỢ
             </h1>
         </div>
@@ -1032,28 +971,4 @@ Nhập nội dung
     
 </body>
 </html>
-<script>  // giỏ hàng
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("cart");
-    var close = document.getElementsByClassName("close")[0];
-    
-    var close_footer = document.getElementsByClassName("close-footer")[0];
-    var order = document.getElementsByClassName("order")[0];
-    btn.onclick = function () {
-      modal.style.display = "block";
-    }
-    close.onclick = function () {
-      modal.style.display = "none";
-    }
-    close_footer.onclick = function () {
-      modal.style.display = "none";
-    }
-    order.onclick = function () {
-      alert("Cảm ơn bạn đã thanh toán đơn hàng")
-    }
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
+<script src="js/main.js">   </script>
