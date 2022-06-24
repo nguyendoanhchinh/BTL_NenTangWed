@@ -1,7 +1,8 @@
 var corect_user='chinh' ;
 var corect_pass='1';
 
-
+var corect_admin='admin' ;
+var corect_pass='1';
 
 var inputUsername=document.getElementById("username");
 var inputPassword=document.getElementById("password");
@@ -16,7 +17,7 @@ function onFormSubmit(e){
   var username=inputUsername.value;
   var password=inputPassword.value;
   
-  if(username==corect_user && password==corect_pass){
+  if(username==corect_user && password==corect_pass ){
     alert('Đăng nhập thành công');
   }else if(username=="" || password == ""){
     alert('Điền đầy đủ thông tin')
@@ -24,5 +25,6 @@ function onFormSubmit(e){
   else{
     alert('Tài khoản không chính xác')
   }
+  
   
 }

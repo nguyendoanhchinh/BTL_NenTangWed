@@ -1,15 +1,54 @@
 
+.header{
+  width:100%
+}
+#form{
+  padding:20px ;
+  width:100%
+}
+#nav{ 
+  
+  width:20%;
+  background-color: #212529;
+  min-height: 722px;
+} 
+.hidden{
+  transform: translateX(-270px);
+  display:none;
+}
+
+.form {
+  padding-left: 50px;
+  width:100%;
+}
+
 /*  Tablet ; width >= 740px and width < 1024px  */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
- #nav{
+  .form {
+    padding-left: 13px;
+    width:100%;
+  }
+  #nav{
   font-size: 1.75vw;
+ 
+  width:30%;
  } 
+ 
 
 }
 /*  mobile: width <740px */
 @media only screen and (max-width: 46.1875em){
-
+    
   #nav{
     font-size: 1.75vw;
+   
    } 
+   h5{
+    display: flex;
+    justify-content: center;
+   }
 }
+
+
+
+

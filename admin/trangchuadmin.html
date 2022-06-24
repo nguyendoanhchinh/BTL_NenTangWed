@@ -125,12 +125,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script>
          window.addEventListener('DOMContentLoaded', event => { 
-            document.body.onresize
+            document.body.onresize = function(event){
+                if(screen.width<=739){
+                    const navelement = document.getElementById('nav')
+                   
+                        navelement.classList.add('hidden')
+                    console.log( navelement.classList)
+                   
+                }
+            }
 
                 // Toggle the side navigation
                 const sidebarToggle = document.getElementById('buttonnav');
                 console.log(sidebarToggle)
                 if (sidebarToggle) {
+
                     // Uncomment Below to persist sidebar toggle between refreshes
                     // if (localStorage.getItem('sb|sidebar-toggle') === 'true') {
                     //     document.body.classList.toggle('sb-sidenav-toggled');
@@ -139,7 +148,7 @@
                         // event.preventDefault();
                         // document.body.classList.toggle('sb-sidenav-toggled');
                         const navelement = document.getElementById('nav')
-                           navelement.classList.toggle('show')
+                           navelement.classList.toggle('hidden')
                            console.log(navelement.classList)
 
                     });

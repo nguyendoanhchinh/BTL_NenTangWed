@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Shop|Liên hệ</title>
+    <meta name="keywords" content="Chó cảnh, pet, cách nuôi chó, mua thú cưng">
+    <meta name="description" content="Mua bán chó cảnh">
+    <meta http-equiv="refresh" content="3600">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/lienhe.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="image/icon/icon-logo.PNG" rel="shortcut icon" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javascript/style_javascript.js"></script>
+</head>
+
+<body>
+      <!-- header -->
+      <header>
+        <div class="tieude">
+            <div class="col30">
+                <a href="index.html">
+                <img src="image/icon/logo-shop.png" alt="Petshop" />
+
+                </a>
+            </div>
+            <div class="col40">
+                <div class="search">
+                    <input type="search" placeholder="Bạn tìm gì..." />
+                    <input type="image" value="timkiem" src="image/icon/search-icon.png" />
+                </div>
+            </div>
+            <div class="col10 header-icon">
+                <a id="hotro" href="#">
+                    <img src="image/icon/hotro-icon.png" alt="hỗ trợ">
+                    <span>Hỗ trợ</span>
+                </a>
+            </div>
+            
+            <button style="border: none; height: 0px; margin-top: 25px;"   id="cart" >
+                <a href="#">
+                    <img src="image/icon/giohang-icon.png" alt="Giỏ hàng">
+                    <span style="display: inline-block; color: #FFA500;">Giỏ hàng</span>
+                </a>
+            </button>
+            <div  style="padding-right: 200px;padding-left: 200px;" id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            
+                            <div class="cart-items">
+                            
+                            <div class="cart-row">
+                                <div class="cart-item cart-column">
+                                    <img class="cart-item-image" src="/image/giongcho/akita-inu.jpg" width="100" height="100">
+                                    <span class="cart-item-title">Akita-inu</span>
+                                </div>
+                                <span class="cart-price cart-column">11100000VND</span>
+                                <div class="cart-quantity cart-column">
+                                    <input class="cart-quantity-input" type="number" value="2">
+                                    <button class="btn btn-danger" type="button">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">11100000VND</span>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col10 header-icon">
+                <a href="#">
+                    <img src="image/icon/dangnhap-icon.png" alt="đăng nhập">
+                    <span style="font-size:13px ;">Nguyễn Văn A</span>
+                </a>
+               
+            </div>
+            <div class="col10 header-icon">
+                <a href="login.html">
+                    <img style="width: 55px;
+                    height: 48px;" src="image/icon/ex.png" alt="đăng nhập">
+                    <span style="font-size:13px ;">Đăng xuất</span>
+                </a>
+               
+            </div>
+        </div>
+    </header>
+    <!--  nav -->
+    <nav id="nav_menu">
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <img src="image/icon/home-icon.png" alt="trang chủ">
+                    <span>TRANG CHỦ</span>
+                </a>
+            </li>
+            <li>
+                <a href="giongcho.html">
+                    <img src="image/icon/giongcho-icon.png" alt="giống chó">
+                    <span>GIỐNG CHÓ</span>
+
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <ul class="menu-list">
+                            <li> <a href="">Akita Inu</a></li>
+                            <li><a href="">Alabai</a></li>
+                            <li><a href="">Alaska</a></li>
+                            <li><a href="">Alaska Giant</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Basset Hound</a></li>
+                            <li><a href="">Bắc Hà</a></li>
+                            <li><a href="">Bắc Kinh</a></li>
+                            <li><a href="">Beagle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+
+                            <li><a href="">Becgie Bỉ</a></li>
+                            <li><a href="">Becgie Đức</a></li>
+                            <li><a href="">Becgie Hà Lan</a></li>
+                            <li> <a href="">Becgie Pháp</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Bichon Frise</a></li>
+                            <li><a href="">Border Collie</a></li>
+                            <li><a href="">Boston</a></li>
+                            <li><a href="">Bull Pháp</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Husky</a></li>
+                            <li><a href="">Labrador</a></li>
+                            <li><a href="">Lạp Xưởng</a></li>
+                            <li><a href="">Ngao Tây Tạng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Phốc Hươu</a></li>
+                            <li><a href="">Phốc Sóc</a></li>
+                            <li><a href="">Phú Quốc</a></li>
+                            <li><a href="">Pitbull</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Poodle</a></li>
+                            <li><a href="">Rottweiler</a></li>
+                            <li><a href="">Pug</a></li>
+                            <li><a href="">Samoyed</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="">Shiba Inu</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="cuncon.html">
+                    <img src="image/icon/cuncon-icon.png" alt="cún con">
+                    <span>CÚN CON</span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Ikita Inu</a>
+                            </li>
+                            <li>
+                                <a href="#">Alaska</a>
+                            </li>
+                            <li>
+                                <a href="#">Bắc Hà</a>
+                            </li>
+                            <li>
+                                <a href="#">Bắc Kinh</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Becgie Đức</a>
+                            </li>
+                            <li>
+                                <a href="#">Border collie</a>
+                            </li>
+                            <li>
+                                <a href="#">Bulldog</a>
+                            </li>
+                            <li>
+                                <a href="#">Bully American</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Chihuahua</a>
+                            </li>
+                            <li>
+                                <a href="#">Chó Đốm</a>
+                            </li>
+                            <li>
+                                <a href="#">Chó Nhật</a>
+                            </li>
+                            <li>
+                                <a href="#">Chow Chow</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Phốc Sóc</a>
+                            </li>
+                            <li>
+                                <a href="#">Phú Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Pitbull</a>
+                            </li>
+                            <li>
+                                <a href="#">Poodle</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li>
+                                <a href="#">Pug</a>
+                            </li>
+                            <li>
+                                <a href="#">Rottweiler</a>
+                            </li>
+                            <li>
+                                <a href="#">Samoyed</a>
+                            </li>
+                            <li>
+                                <a href="#">Shiba Inu</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="phukien.html">
+                    <img src="image/icon/phukien-icon.png" alt="phụ kiện">
+                    <span>PHỤ KIỆN</span>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="#">Đồ Dùng Thú Cưng</a></li>
+                            <li><a href="#">Thức Ăn Thú Cưng</a></li>
+                            <li><a href="#">Chuồng Lồng Thú Cưng</a></li>
+                            <li><a href="#">Đồ Chơi Thú Cưng</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="menu-list">
+                            <li><a href="#">Phụ Kiện Làm Đẹp</a></li>
+                            <li><a href="#">Quần Áo Thú Cưng</a></li>
+                            <li><a href="#">Thực Phẩm Dinh Dưỡng</a></li>
+                            <li><a href="#">Thuốc & Sản Phẩm Chức Năng</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="cachnuoi.html">
+                    <img src="image/icon/cachnuoi-icon.png" alt="cách nuôi">
+                    <span>CÁCH NUÔI</span>
+                </a>
+            </li>
+            <li>
+                <a href="dichvu.html">
+                    <img src="image/icon/dichvu-icon.png" alt="dịch vụ">
+                    <span>DỊCH VỤ</span>
+                </a>
+            </li>
+            <li>
+                <a href="gioithieu.html">
+                    <img src="image/icon/gioithieu-icon.png" alt="giới thiệu">
+                    <span>GIỚI THIỆU</span>
+                </a>
+            </li>
+            <li>
+                <a href="lienhe.html">
+                    <img src="image/icon/lienhe-icon.png" alt="liên hệ">
+                    <span>LIÊN HỆ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--section-->
+    <section class="main">
+        <h1>Liên hệ</h1>
+        <h4>Mọi thông tin chi tiết quý khách có thể liên hệ</h4>
+        <ul>
+            <li><img src="image/icon/zalo-icon-lienhe.png" alt="zalo" /><span class="indam"> Zalo:</span> 0888425094</li>
+            <li><img src="image/icon/phone-lienhe-icon.png" alt="điện thoại" /><span class="indam"> Hotline:</span> 0888425094</li>
+            <li><img src="image/icon/mail-icon-lienhe.png" alt="Email" /><span class="indam"> Email:</span> <a href="mailto:petshop.cuahangthucung@gmail.com">petshop.cuahangthucung@gmail.com</a></li>
+            <li>
+                <img src="image/icon/map-icon.png" alt="Địa chỉ" /> <span class="indam"> Địa chỉ:</span><a href=""> Petshop.com</a>
+                <ul>
+                    <li><span class="indam">Cơ sở 1:</span> 371 Nguyễn Kiệm, phường 3, quận Gò Vấp, Tp.Hồ Chí Minh.</li>
+                    <li><span class="indam">Cơ sở 2:</span> 97 Võ Văn Tần, Phường 6, Quận 3, Thành phố Hồ Chí Minh.</li>
+                    <li><span class="indam">Cơ sở 3:</span> ấp An Phú, xã An Quy, huyện Thạnh Phú, Bến Tre.</li>
+                </ul>
+            </li>
+           
+        </ul>
+    </section>
+    <div class="back-to-top" id="backtop">
+        <a href="">
+            <img src="image/icon/icon-backtotop.png" alt="back to top" />
+        </a>
+    </div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="footer">
+            <div class="col30 footer-logo">
+                <img src="image/icon/logo-shop.png" alt="logoshop" />
+            </div>
+            <div class="col40 freeship">
+                <div><img src="image/icon/icon-shipping.png" alt="shipping" /></div>
+                <div>Giao hàng miễn phí tại TP.HCM, Hà Nội, Đà Nẵng Áp dụng cho đơn hàng từ 500.000đ trở lên</div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="col20 footer-info">
+                <h6>Về chúng tôi</h6>
+                <ul>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Chi nhánh</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li>
+                        <a target="_blank" href="http://online.gov.vn/"><img src="image/icon/icon-bocongthuong.png" alt="bộ công thương"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.dmca.com/Protection/Status.aspx?ID=1bf3f65e-4ac8-457e-8400-9d299263f727"><img src="image/icon/_dmca_premi_badge_7.png" alt="chứng nhận"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col40 footer-support">
+                <h6>Hỗ trợ khách hàng</h6>
+                <ul>
+                    <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    <li><a href="#">Điều khoản và điều kiện</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
+                    <li><a href="#">Chính sách thanh toán</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Hướng dẫn gửi trả hàng</a></li>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Mua trả góp</a></li>
+                    <li><a href="#">Chất lượng dịch vụ</a></li>
+                </ul>
+            </div>
+            <div class="col40 footer-contact">
+                <h6>Thông tin liên hệ</h6>
+                <ul>
+                 
+                        Email: <a href="mailto:petshop.cuahangthucung@gmail.com">petshop.cuahangthucung@gmail.com</a>
+                    </li>
+                    <li>
+                        Holine: <span class="mauholine">0888425094</span>
+                    </li>
+                    <li>
+                        Website: <a href="http://127.0.0.1:5500/index.html">http://petshop.vn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
